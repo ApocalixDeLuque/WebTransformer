@@ -35,7 +35,7 @@ function Home() {
         event.preventDefault();
         setLoading(true);
         try {
-            const response = await fetch("http://localhost:8080/openai/generateinfo", {
+            const response = await fetch("/api/openai/generateinfo", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
