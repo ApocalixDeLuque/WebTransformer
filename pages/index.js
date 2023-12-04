@@ -35,7 +35,7 @@ function Home() {
         event.preventDefault();
         setLoading(true);
         try {
-            const response = await fetch("https://m2vg8t31-3000.usw3.devtunnels.ms/api/openai/generateInfo", {
+            const response = await fetch("https://expressjs-openai.onrender.com/api/openai/generateInfo", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
